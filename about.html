@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About.html</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f9fafb;
+            color: #333;
+        }
+        h1, h2, h3 {
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        /* 1.2. Вимоги до абзацу з особливим форматуванням */
+        .styled-paragraph {
+            text-decoration: underline;
+            font-weight: bold;
+            color: #0d9488;
+            font-family: 'Monotype Corsiva', cursive, sans-serif;
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+        /* Центрування для фото та iframe */
+        .media-block {
+            text-align: center;
+            margin: 20px 0;
+        }
+        iframe {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Про мене</h1>
+        <h2 style="text-align: left;">Мої улюблені предмети</h2>
+        <h2 style="text-align: left;">Контактні дані</h2>
+
+        <p>Вітаю! Мене звати Артем. Це моя персональна веб-сторінка, створена в рамках практичної роботи з інформатики.</p>
+
+        <p class="styled-paragraph">
+            Цей абзац має особлие форматування відповідно до інструкції: текст підкреслений, жирний, кольору морської хвилі та виконаний шрифтом Monotype Corsiva.
+        </p>
+        <h3>Улюблені навчальні предмети:</h3>
+        <ul style="list-style-type: circle;">
+            <li>Географія</li>
+            <li>Фізика</li>
+            <li>Інформатика</li>
+            <li>Українська література</li>
+        </ul>
+        <hr>
+        <h3>Фотографія</h3>
+        <div class="media-block">
+            <a href="https://pixabay.com" target="_blank" title="Перейти до джерела зображення">
+                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" width="300" alt="Природа">
+            </a>
+        </div>
+        <hr>
+        <h2>Вбудовані матеріали (iframe)</h2>
+        <h3>Відео з YouTube:</h3>
+        <div class="media-block">
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/L_LUpnjgPso" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <h3>Карта (OpenStreetMap):</h3>
+        <div class="media-block">
+            <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=30.5100%2C50.4400%2C30.5300%2C50.4600&amp;layer=mapnik"></iframe>
+        </div>
+        <hr>
+        <p style="text-align: center; color: #777; font-size: 0.9rem;">
+        </p>
+    </div>
+</body>
+</html>
